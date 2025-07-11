@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: shrish-telegram-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    env: python
+    pythonVersion: 3.10.12
+    region: oregon
+    plan: free
